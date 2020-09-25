@@ -11,10 +11,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // get reference to button
-        val btn_click_me = findViewById(R.id.vidarebtn) as Button
-// set on-click listener
-        btn_click_me.setOnClickListener {
-            Toast.makeText(this@MainActivity, "You clicked me.", Toast.LENGTH_SHORT).show()
+        val vidareknappen = findViewById(R.id.vidareBtn) as Button
+        // set on-click listener
+        vidareknappen.setOnClickListener {
+            
+            // Toast.makeText(this@MainActivity, "You clicked me.", Toast.LENGTH_SHORT).show()
         }
     }
 }
