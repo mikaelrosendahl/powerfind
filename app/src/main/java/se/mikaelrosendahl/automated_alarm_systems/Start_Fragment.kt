@@ -24,13 +24,4 @@ class Start_Fragment : Fragment() {
         return inflater.inflate(R.layout.fragment_start_, container, false)
     }
 
-    override fun onStart() {
-        super.onStart()
-
-        okNextBtn.setOnClickListener {
-            
-        }
-    }
-
-
 }
