@@ -11,9 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // get refernce to button set on-click listener
-        vidareBtn.setOnClickListener {
-            classLoader.loadClass()
-        }
+
+
     }
 }
