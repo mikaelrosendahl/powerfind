@@ -6,8 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/changeContentBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="73dp"
+        android:text="OK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <fragment
-        android:id="@+id/fragment2"
+        android:id="@+id/fragmentHolder"
         android:name="se.mikaelrosendahl.automated_alarm_systems.Start_Fragment"
         android:layout_width="0dp"
         android:layout_height="600dp"
