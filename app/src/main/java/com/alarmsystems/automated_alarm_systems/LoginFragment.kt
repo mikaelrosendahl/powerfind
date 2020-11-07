@@ -29,8 +29,7 @@ class LoginFragment : Fragment() {
                 if(task.isSuccessful)
                 {
                     //container.findNavController().popBackStack()
-                    //Todo ändra dest.
-                    this.findNavController().navigate(R.id.action_startFragment_to_loginFragment)
+                    this.findNavController().navigate(R.id.action_loginFragment_to_settingsadapterFragment)
                 }
             }
         }
