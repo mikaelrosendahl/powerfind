@@ -11,8 +11,8 @@ import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.settingsadapterfragment.*
 
 
-//Firebase instance
-private lateinit var auth: FirebaseAuth
+    //Firebase instance
+    private lateinit var auth: FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
     //Creates instance of adapter
