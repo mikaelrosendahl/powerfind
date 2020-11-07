@@ -17,5 +17,5 @@ class StartFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_start, container, false)
     }
-    
+
 }
