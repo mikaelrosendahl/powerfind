@@ -26,10 +26,10 @@ class LoginFragment : Fragment() {
             val password = passwordEditText.text.toString()
 
             auth.signInWithEmailAndPassword(username, password).addOnCompleteListener { task ->
-                if(task.isSuccessful)
-                {
+                if (task.isSuccessful) {
                     //container.findNavController().popBackStack()
-                    this.findNavController().navigate(R.id.action_loginFragment_to_settingsadapterFragment)
+                    this.findNavController()
+                        .navigate(R.id.action_loginFragment_to_settingsadapterFragment)
                 }
             }
         }
@@ -39,13 +39,11 @@ class LoginFragment : Fragment() {
             val password = passwordEditText.text.toString()
 
             auth.createUserWithEmailAndPassword(username, password).addOnCompleteListener { task ->
-                if(task.isSuccessful)
-                {
+                if (task.isSuccessful) {
+                    //Todo fråga Bill om container
                     container.findNavController().popBackStack()
                 }
             }
         }
-
-
-
     }
+}

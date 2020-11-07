@@ -9,7 +9,8 @@ class TheRecyclerView () : RecyclerView.Adapter<MyViewHolder>(){
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
-        val vh = MyViewHolder(LayoutInflater.from(parent.context).inflate(R.layout.settingsadapterfragment, parent, false))
+        val vh = MyViewHolder(LayoutInflater.from(parent.context)
+            .inflate(R.layout.my_layout_item, parent, false))
         return vh
     }
 
