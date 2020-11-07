@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             // VISA LOGIN
             Log.i("ALARMDEBUG", "INTE INLOGGAD")
 
-            container.findNavController().navigate(R.id.action_mainFragment_to_loginFragment)
+            container.findNavController().navigate(R.id.action_startFragment_to_loginFragment)
 
         } else {
             // VISA MAIN
