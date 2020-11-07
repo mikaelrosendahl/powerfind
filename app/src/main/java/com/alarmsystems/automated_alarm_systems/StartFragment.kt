@@ -22,6 +22,7 @@ class StartFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
+        //skapar fun för knapp med findnavkontroll
         ProfilBtn.setOnClickListener {
             this.findNavController().navigate(R.id.action_startFragment_to_loginFragment)
         }
