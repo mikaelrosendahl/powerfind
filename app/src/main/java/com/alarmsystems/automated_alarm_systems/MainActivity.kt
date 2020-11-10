@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             Log.i("ALARMDEBUG", "INTE INLOGGAD")
 
             //Todo lyssna med Bill!!
-            this.findNavController().navigate(R.id.action_startFragment_to_loginFragment)
+            this.findNavController(R.id.fragment).navigate(R.id.action_startFragment_to_loginFragment)
 
         } else {
             // VISA MAIN

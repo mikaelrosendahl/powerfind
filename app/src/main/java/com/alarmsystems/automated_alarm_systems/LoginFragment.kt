@@ -42,7 +42,7 @@ class LoginFragment : Fragment() {
                 if (task.isSuccessful) {
 
                     //Todo fråga Bill om container
-                    container.findNavController().popBackStack()
+                    this.findNavController().popBackStack()
                 }
             }
         }
