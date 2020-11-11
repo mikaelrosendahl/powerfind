@@ -1,4 +1,4 @@
-package com.powerfind.automated_alarm_systems
+package com.powerfind.powerfind
 
 import androidx.fragment.app.Fragment
 

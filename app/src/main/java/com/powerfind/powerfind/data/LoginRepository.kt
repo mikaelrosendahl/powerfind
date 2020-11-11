@@ -1,6 +1,6 @@
-package com.powerfind.automated_alarm_systems.data
+package com.powerfind.powerfind.data
 
-import com.powerfind.automated_alarm_systems.data.model.LoggedInUser
+import com.powerfind.powerfind.data.model.LoggedInUser
 
 /**
  * Class that requests authentication and user information from the remote data source and
