@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "Automated_Alarm_Systems"
+rootProject.name = "Powerfind"

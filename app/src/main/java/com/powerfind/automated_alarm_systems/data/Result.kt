@@ -1,4 +1,4 @@
-package com.alarmsystems.automated_alarm_systems.data
+package com.powerfind.automated_alarm_systems.data
 
 /**
  * A generic class that holds a value with its loading status.

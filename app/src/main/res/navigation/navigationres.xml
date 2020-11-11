@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/startFragment"
-        android:name="com.alarmsystems.automated_alarm_systems.StartFragment"
+        android:name="com.powerfind.powerfind.StartFragment"
         android:label="fragment_start"
         tools:layout="@layout/fragment_start" >
         <action
@@ -16,16 +16,15 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.alarmsystems.automated_alarm_systems.LoginFragment"
+        android:name="com.powerfind.powerfind.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_settingsadapterFragment"
-            app:destination="@id/settingsadapterFragment" />
+            android:id="@+id/action_loginFragment_to_mapsfragment"
+            app:destination="@id/action_loginFragment_to_mapsfragment" />
     </fragment>
-    <fragment
-        android:id="@+id/settingsadapterFragment"
-        android:name="com.alarmsystems.automated_alarm_systems.SettingsadapterFragment"
-        android:label="fragment_settingsadapter"
-        tools:layout="@layout/fragment_settingsadapter" />
+    <activity
+        android:id="@+id/mapsActivity"
+        android:name="com.powerfind.powerfind.MapsFragment"
+        android:label="MapsFragment" />
 </navigation>

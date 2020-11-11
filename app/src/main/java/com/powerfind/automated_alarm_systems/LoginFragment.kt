@@ -1,14 +1,13 @@
-package com.alarmsystems.automated_alarm_systems
+package com.powerfind.automated_alarm_systems
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
+import com.powerfind.powerfind.R
 import kotlinx.android.synthetic.main.fragment_login.*
 
 class LoginFragment : Fragment() {
@@ -29,7 +28,7 @@ class LoginFragment : Fragment() {
                 if (task.isSuccessful) {
                     //container.findNavController().popBackStack()
                     this.findNavController()
-                        .navigate(R.id.action_loginFragment_to_settingsadapterFragment)
+                        .navigate(R.id.action_loginFragment_to_mapsfragment)
                 }
             }
         }
@@ -41,7 +40,6 @@ class LoginFragment : Fragment() {
             auth.createUserWithEmailAndPassword(username, password).addOnCompleteListener { task ->
                 if (task.isSuccessful) {
 
-                    //Todo fråga Bill om container
                     this.findNavController().popBackStack()
                 }
             }

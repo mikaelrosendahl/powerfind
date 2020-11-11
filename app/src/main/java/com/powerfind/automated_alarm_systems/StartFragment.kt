@@ -1,4 +1,4 @@
-package com.alarmsystems.automated_alarm_systems
+package com.powerfind.automated_alarm_systems
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.powerfind.powerfind.R
 import kotlinx.android.synthetic.main.fragment_start.*
 
 

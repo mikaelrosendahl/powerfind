@@ -1,4 +1,4 @@
-package com.alarmsystems.automated_alarm_systems
+package com.powerfind.automated_alarm_systems
 
 import org.junit.Test
 
