@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "840067920483",
+    "firebase_url": "https://powerfind.firebaseio.com",
+    "project_id": "powerfind",
+    "storage_bucket": "powerfind.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:840067920483:android:ff7f4be9f8cccd6e3c3e56",
+        "android_client_info": {
+          "package_name": "com.powerfind.powerfind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "840067920483-902b5v9nmrtlioudmd17i4patkt2cr17.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeFU_SaNFAGIaU_0eE4iv1aYqeY92EJ0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "840067920483-902b5v9nmrtlioudmd17i4patkt2cr17.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
