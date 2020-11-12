@@ -13,7 +13,7 @@ import com.powerfind.powerfind.R
 
 
 //Firebase instance
-    private lateinit var auth: FirebaseAuth
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,23 +25,12 @@ class MainActivity : AppCompatActivity() {
 
 
         //ref to firebase auth
-        auth = Firebase.auth
+
     }
     public override fun onStart() {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
 
-        if(auth.currentUser == null)
-        {
-            // VISA LOGIN
-            Log.i("ALARMDEBUG", "INTE INLOGGAD")
 
-            this.findNavController(R.id.fragment).navigate(R.id.action_startFragment_to_loginFragment)
-
-        } else {
-            // VISA MAIN
-            Log.i("ALARMDEBUG", "INLOGGAD")
-
-        }
     }
 }

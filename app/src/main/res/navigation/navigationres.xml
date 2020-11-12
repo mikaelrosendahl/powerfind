@@ -23,8 +23,4 @@
             android:id="@+id/action_loginFragment_to_mapsfragment"
             app:destination="@id/action_loginFragment_to_mapsfragment" />
     </fragment>
-    <activity
-        android:id="@+id/mapsActivity"
-        android:name="com.powerfind.powerfind.MapsFragment"
-        android:label="MapsFragment" />
 </navigation>
