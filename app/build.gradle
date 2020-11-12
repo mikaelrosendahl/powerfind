@@ -8,7 +8,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.alarmsystems.automated_alarm_systems"
+        applicationId "com.powerfind.powerfind"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
