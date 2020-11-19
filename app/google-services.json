@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "840067920483",
-    "firebase_url": "https://powerfind.firebaseio.com",
-    "project_id": "powerfind",
-    "storage_bucket": "powerfind.appspot.com"
+    "project_number": "730741016436",
+    "firebase_url": "https://powerfind-d889d.firebaseio.com",
+    "project_id": "powerfind-d889d",
+    "storage_bucket": "powerfind-d889d.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:840067920483:android:ff7f4be9f8cccd6e3c3e56",
+        "mobilesdk_app_id": "1:730741016436:android:21b5b363dcd9a118c5ce21",
         "android_client_info": {
           "package_name": "com.powerfind.powerfind"
         }
       },
       "oauth_client": [
         {
-          "client_id": "840067920483-902b5v9nmrtlioudmd17i4patkt2cr17.apps.googleusercontent.com",
+          "client_id": "730741016436-7a81nufi63obeiqovddt2gh4qbsrerht.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBeFU_SaNFAGIaU_0eE4iv1aYqeY92EJ0Y"
+          "current_key": "AIzaSyA6z54a_qXYTCm_C4w45upRmpW_tmdZEgg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "840067920483-902b5v9nmrtlioudmd17i4patkt2cr17.apps.googleusercontent.com",
+              "client_id": "730741016436-7a81nufi63obeiqovddt2gh4qbsrerht.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
