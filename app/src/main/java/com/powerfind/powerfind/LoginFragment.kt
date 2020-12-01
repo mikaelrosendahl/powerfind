@@ -26,7 +26,6 @@ class LoginFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
-
         val usernameEditText = emailET
         val passwordEditText = passwordET
 
