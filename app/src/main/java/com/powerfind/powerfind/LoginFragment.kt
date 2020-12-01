@@ -37,7 +37,7 @@ class LoginFragment : Fragment() {
                 if (task.isSuccessful) {
                     //container.findNavController().popBackStack()
                     this.findNavController()
-                        .navigate(R.id.action_loginFragment_to_mapsfragment)
+                        .navigate(R.id.action_loginFragment_to_mapsFragment)
                 }
             }
         }
