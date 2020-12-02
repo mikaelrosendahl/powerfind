@@ -1,8 +1,10 @@
 package com.powerfind.powerfind
 
+import android.content.ContentValues.TAG
 import androidx.fragment.app.Fragment
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,19 +14,36 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.ValueEventListener
+import com.google.firebase.database.ktx.database
+import com.google.firebase.database.ktx.getValue
+import com.google.firebase.ktx.Firebase
 
 class MapsFragment : Fragment() {
 
+    /*private lateinit var database: DatabaseReference
+
+    // Read from the database
+    myRef.addValueEventListener(object : ValueEventListener {
+        override fun onDataChange(dataSnapshot: DataSnapshot) {
+            // This method is called once with the initial value and again
+            // whenever data at this location is updated.
+            val value = dataSnapshot.getValue<String>()
+            Log.d(TAG, "Value is: $value")
+
+        }
+
+        override fun onCancelled(error: DatabaseError) {
+            // Failed to read value
+            Log.w(TAG, "Failed to read value.", error.toException())
+        }
+    })*/
+
     private val callback = OnMapReadyCallback { googleMap ->
-        /**
-         * Manipulates the map once available.
-         * This callback is triggered when the map is ready to be used.
-         * This is where we can add markers or lines, add listeners or move the camera.
-         * In this case, we just add a marker near Sydney, Australia.
-         * If Google Play services is not installed on the device, the user will be prompted to
-         * install it inside the SupportMapFragment. This method will only be triggered once the
-         * user has installed Google Play services and returned to the app.
-         */
+
         val uppsala = LatLng(59.8, 17.6)
         googleMap.addMarker(MarkerOptions().position(uppsala).title("Marker in Uppsala"))
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(uppsala))
@@ -43,4 +62,5 @@ class MapsFragment : Fragment() {
         val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
         mapFragment?.getMapAsync(callback)
     }
+
 }

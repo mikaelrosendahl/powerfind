@@ -48,7 +48,6 @@ class LoginFragment : Fragment() {
 
             auth.createUserWithEmailAndPassword(username, password).addOnCompleteListener { task ->
                 if (task.isSuccessful) {
-
                     this.findNavController().popBackStack()
                 }
             }
