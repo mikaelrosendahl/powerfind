@@ -35,7 +35,7 @@ class MapsFragment : Fragment() {
             googleMap.setOnMarkerClickListener(clusterManager)
 
             // Add cluster items (markers) to the cluster manager.
-           addItems()
+       //    addItems()
         }
 
         fun addItems() {
