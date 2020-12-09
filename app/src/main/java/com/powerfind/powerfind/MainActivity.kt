@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         database = Firebase.database.reference
 
-            // Set path to the database
+          /*  // Set path to the database
               val database = Firebase.database
               val myRef = database.getReference("chargerstations")
 
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                       // Failed to read value
                       Log.w("Debug", "Failed to read value.", error.toException())
                   }
-              })
+              })*/
     }
 
     public override fun onStart() {
