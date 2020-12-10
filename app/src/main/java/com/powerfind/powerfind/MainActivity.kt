@@ -36,7 +36,6 @@ class MainActivity : AppCompatActivity() {
                 // Get Post object and use the values to update the UI
                 for (chargerchild in dataSnapshot.children){
                     val display = dataSnapshot.getValue<Stations>()
-                    Log.i("Debug", display!!.station)val display = dataSnapshot.getValue<Stations>()
                     Log.i("Debug", display!!.station)
                 }
 
