@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
                       Log.w("Debug", "Failed to read value.", error.toException())
                   }
               })*/
+        var chargers = Stations("chargerstation")
     }
 
     public override fun onStart() {
