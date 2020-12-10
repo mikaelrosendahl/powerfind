@@ -25,30 +25,29 @@ class MainActivity : AppCompatActivity() {
 
         database = Firebase.database.reference
 
-          /*  // Set path to the database
-              val database = Firebase.database
-              val myRef = database.getReference("chargerstations")
+        // Set path to the database
+        val database = Firebase.database
+        //val myRef = database.getReference("chargerstations")
+        //creates object
 
+        val stationListener = object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                // Get Post object and use the values to update the UI
+                val display = dataSnapshot.getValue<Stations>()
+                Log.i("Debug", display!!.station)
+            }
+            override fun onCancelled(databaseError: DatabaseError) {
+                // Getting Post failed, log a message
+                Log.w("Debug", "loadPost:onCancelled", databaseError.toException())
 
-              // Read from the database
-              myRef.addValueEventListener(object : ValueEventListener {
-                  override fun onDataChange(dataSnapshot: DataSnapshot) {
-                      // This method is called once with the initial value and again
-                      // whenever data at this location is updated.
-                      val value = dataSnapshot.getValue<MyItem>()
-                      Log.d("Debug", "Value is: $value")
-                  }
-                  override fun onCancelled(error: DatabaseError) {
-                      // Failed to read value
-                      Log.w("Debug", "Failed to read value.", error.toException())
-                  }
-              })*/
-        var chargers = Stations("chargerstation")
-    }
-
+            }
+        }
+        database.getReference("chargerstations").addListenerForSingleValueEvent(stationListener)
+        var chargers = Stations("chargerstations")
+        }
     public override fun onStart() {
         super.onStart()
-
     }
-
 }
+
+
