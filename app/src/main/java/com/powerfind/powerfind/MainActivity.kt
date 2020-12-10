@@ -29,13 +29,19 @@ class MainActivity : AppCompatActivity() {
         val database = Firebase.database
         //val myRef = database.getReference("chargerstations")
         //creates object
+        //var chargers = Stations("chargerstations")
 
         val stationListener = object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 // Get Post object and use the values to update the UI
-                val display = dataSnapshot.getValue<Stations>()
-                Log.i("Debug", display!!.station)
+                for (chargerchild in dataSnapshot.children){
+                    val display = dataSnapshot.getValue<Stations>()
+                    Log.i("Debug", display!!.station)val display = dataSnapshot.getValue<Stations>()
+                    Log.i("Debug", display!!.station)
+                }
+
             }
+
             override fun onCancelled(databaseError: DatabaseError) {
                 // Getting Post failed, log a message
                 Log.w("Debug", "loadPost:onCancelled", databaseError.toException())
@@ -43,7 +49,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
         database.getReference("chargerstations").addListenerForSingleValueEvent(stationListener)
-        var chargers = Stations("chargerstations")
+
         }
     public override fun onStart() {
         super.onStart()
