@@ -33,9 +33,12 @@ class MainActivity : AppCompatActivity() {
 
         val stationListener = object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
+
                 // Get Post object and use the values to update the UI
                 for (chargerchild in dataSnapshot.children){
-                    val display = dataSnapshot.getValue<Stations>()
+
+                    val display = chargerchild.getValue<Stations>()
+
                     Log.i("Debug", display!!.station)
                 }
 
