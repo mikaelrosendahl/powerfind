@@ -55,6 +55,7 @@ class MapsFragment : Fragment() {
             }
         }
 
+
         /*val uppsala = LatLng(59.86804, 17.63715)
         googleMap.addMarker(MarkerOptions().position(uppsala).title("Marker in Uppsala"))
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(uppsala))*/
