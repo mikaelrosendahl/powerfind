@@ -18,10 +18,10 @@ class MapsFragment : Fragment() {
 
 
     // Declare a variable for the cluster manager.
-    private lateinit var clusterManager: ClusterManager<MyItem>
+    //private lateinit var clusterManager: ClusterManager<MyItem>
     private val callback = OnMapReadyCallback { googleMap ->
 
-     fun setUpClusterer() {
+     /*fun setUpClusterer() {
             // Position the map.
             googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(59.86, 17.63), 10f))
 
@@ -53,12 +53,12 @@ class MapsFragment : Fragment() {
                     MyItem(lat, lng, "Title $i", "Snippet $i")
                 clusterManager.addItem(offsetItem)
             }
-        }
+        }*/
 
 
-        /*val uppsala = LatLng(59.86804, 17.63715)
+        val uppsala = LatLng(59.86804, 17.63715)
         googleMap.addMarker(MarkerOptions().position(uppsala).title("Marker in Uppsala"))
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(uppsala))*/
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(uppsala))
     }
 
     override fun onCreateView(

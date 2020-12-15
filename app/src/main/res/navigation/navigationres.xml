@@ -20,9 +20,6 @@
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_mapsfragment"
-            app:destination="@id/action_loginFragment_to_mapsfragment" />
-        <action
             android:id="@+id/action_loginFragment_to_mapsFragment"
             app:destination="@id/mapsFragment" />
     </fragment>
