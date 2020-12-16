@@ -16,7 +16,6 @@ import com.google.maps.android.clustering.ClusterManager
 
 class MapsFragment : Fragment() {
 
-
     // Declare a variable for the cluster manager.
     //private lateinit var clusterManager: ClusterManager<MyItem>
     private val callback = OnMapReadyCallback { googleMap ->
@@ -54,7 +53,6 @@ class MapsFragment : Fragment() {
                 clusterManager.addItem(offsetItem)
             }
         }*/
-
 
         val uppsala = LatLng(59.86804, 17.63715)
         googleMap.addMarker(MarkerOptions().position(uppsala).title("Marker in Uppsala"))
