@@ -54,6 +54,11 @@ class MapsFragment : Fragment() {
             }
         }*/
 
+        for (station in (activity as MainActivity).allStations)
+        {
+            val singleStation = LatLng(station.lat, station.lng)
+            googleMap.addMarker(MarkerOptions().position(singleStation).title("Marker in "+station.city))
+        }
         val uppsala = LatLng(59.86804, 17.63715)
         googleMap.addMarker(MarkerOptions().position(uppsala).title("Marker in Uppsala"))
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(uppsala))

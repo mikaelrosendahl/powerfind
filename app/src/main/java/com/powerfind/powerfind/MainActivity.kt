@@ -18,7 +18,7 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var database: DatabaseReference
-
+    var allStations = mutableListOf<Stations>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -37,9 +37,20 @@ class MainActivity : AppCompatActivity() {
                 // Get Post object and use the values to update the UI
                 for (chargerchild in dataSnapshot.children){
 
-                    val display = chargerchild.getValue<Stations>()
+                    var tempStation = Stations()
+                    val cityValue = chargerchild.child("csmd").child("City").getValue<String>()
+                    var positionValue = chargerchild.child("csmd").child("Position").getValue<String>()
+                    positionValue = positionValue!!.removePrefix("(")
+                    positionValue = positionValue!!.removeSuffix(")")
+                    var lat = positionValue.substringBefore(",").toDouble()
+                    var lng = positionValue.substringAfter(",").toDouble()
+                    Log.i("Debug", cityValue!! + " " + positionValue!!)
+                    tempStation.station = cityValue
+                    allStations.add(tempStation)
 
-                    Log.i("Debug", display!!.station)
+                   // val display = chargerchild.getValue<Stations>()
+
+                   // Log.i("Debug", display!!.station)
                 }
 
             }
