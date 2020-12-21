@@ -18,7 +18,9 @@ import java.util.*
 class MainActivity : AppCompatActivity() {
 
     private lateinit var database: DatabaseReference
+
     var allStations = mutableListOf<Stations>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -27,9 +29,6 @@ class MainActivity : AppCompatActivity() {
 
         // Set path to the database
         val database = Firebase.database
-        //val myRef = database.getReference("chargerstations")
-        //creates object
-        //var chargers = Stations("chargerstations")
 
         val stationListener = object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
@@ -40,17 +39,18 @@ class MainActivity : AppCompatActivity() {
                     var tempStation = Stations()
                     val cityValue = chargerchild.child("csmd").child("City").getValue<String>()
                     var positionValue = chargerchild.child("csmd").child("Position").getValue<String>()
+
                     positionValue = positionValue!!.removePrefix("(")
                     positionValue = positionValue!!.removeSuffix(")")
+
                     var lat = positionValue.substringBefore(",").toDouble()
                     var lng = positionValue.substringAfter(",").toDouble()
+
                     Log.i("Debug", cityValue!! + " " + positionValue!!)
+
                     tempStation.station = cityValue
                     allStations.add(tempStation)
 
-                   // val display = chargerchild.getValue<Stations>()
-
-                   // Log.i("Debug", display!!.station)
                 }
 
             }
