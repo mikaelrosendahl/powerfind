@@ -48,7 +48,10 @@ class MainActivity : AppCompatActivity() {
 
                     Log.i("Debug", cityValue!! + " " + positionValue!!)
 
-                    tempStation.station = cityValue
+
+                    tempStation.city = cityValue
+                    tempStation.lat = lat
+                    tempStation.lng = lng
                     allStations.add(tempStation)
 
                 }
